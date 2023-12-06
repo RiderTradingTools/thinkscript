@@ -2,13 +2,21 @@
   "name": "thinkscript",
   "displayName": "thinkscript",
   "description": "thinkscript syntax highlighting used in thinkorswim trading platform",
+  "publisher": "RiderTradingTools",
+  "icon": "images/thinkorswim.png",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.80.0"
   },
+  "pricing": "Free",  
   "categories": [
     "Programming Languages"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RiderTradingTools/thinkscript"
+  },
+  "homepage": "https://github.com/RiderTradingTools/thinkscript",
   "contributes": {
     "languages": [{
       "id": "thinkscript",

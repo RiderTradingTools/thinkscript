@@ -7,10 +7,14 @@ Adds syntax highlight support for thinkscript in Visual Studio Code.
 
 Supported file extension: &nbsp; <b><i>.thinkscript</i></b>
 
+<br>
+
 ---
 
 ### Sample screenshot
 <img src="https://ridertradingtools.com/images/example_ts_color_theme.png" alt="example color theme screenshot">
+
+<br>
 
 ### A side-by-side screenshot
 <img src="https://ridertradingtools.com/images/side-by-side_example.png" alt="side-by-side editor example">
