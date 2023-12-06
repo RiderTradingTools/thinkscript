@@ -1,6 +1,6 @@
 {
   "name": "thinkscript",
-  "displayName": "thinkscript",
+  "displayName": "thinkscript language support",
   "description": "thinkscript syntax highlighting used in thinkorswim trading platform",
   "publisher": "RiderTradingTools",
   "icon": "images/thinkorswim.png",
