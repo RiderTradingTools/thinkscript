@@ -9,21 +9,10 @@ Supported file extension: &nbsp; <b><i>.thinkscript</i></b>
 
 ---
 
-### Matching thinkscript Color Theme
-Link to corresponding thinkscript color theme: 
-
-- VS Code extension marketplace:  https://marketplace.visualstudio.com/items?itemName=RiderTradingTools.thinkscript-color-theme
-
-- github: https://github.com/RiderTradingTools/thinkscript-color-theme
-
-<br>
-
----
-
-### Sample Screenshot
+### Sample screenshot
 <img src="https://ridertradingtools.com/images/example_ts_color_theme.png" alt="example color theme screenshot">
 
-### A side-by-side Screenshot
+### A side-by-side screenshot
 <img src="https://ridertradingtools.com/images/side-by-side_example.png" alt="side-by-side editor example">
 
 ---
@@ -32,9 +21,20 @@ Link to corresponding thinkscript color theme:
 
 Install the VS Code extension and the changes will automatically be applied to .thinkscript files.
 
+- VS Code extension marketplace:  https://marketplace.visualstudio.com/items?itemName=RiderTradingTools.thinkscript
+
+- github: https://github.com/RiderTradingTools/thinkscript
+
+---
+
+### Find the matching thinkscript color theme
+Link to corresponding thinkscript color theme: 
+
 - VS Code extension marketplace:  https://marketplace.visualstudio.com/items?itemName=RiderTradingTools.thinkscript-color-theme
 
 - github: https://github.com/RiderTradingTools/thinkscript-color-theme
+
+<br>
 
 
 
