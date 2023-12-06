@@ -1,0 +1,88 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "thinkscript",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#constants"
+		}
+	],
+
+	"repository": {
+
+		"keywords": {
+			"patterns": [
+				
+				{
+				"name": "keyword.control.thinkscript",
+				"match": "\\b(?i)(above|ago|and|bar|bars|below|between|case|crosses|declare|def|default|do|else|equal|equals|fold|from|greater|if|input|is|less|no|not|or|plot|profile|rec|reference|script|switch|than|then|to|while|with|within|yes|enum|constant|float|integer|price|string|true|false)\\b"
+				},
+				
+				{
+				"name": "keyword.control.reserved.thinkscript",
+				"match": "\\b(?i)(IsNaN|AccumDist|AddChartBubble|AddCloud|AddLabel|AddOrder|AddVerticalLine|AsDollars|AsPercent|AsPrice|Assert|AssignBackgroundColor|AssignNormGradientColor|AssignPriceColor|AssignValueColor|AsText|Average|BarNumber|Between|BodyHeight|BookValuePerShare|CompoundValue|Concat|CountTradingDays|CreateColor|CurrentRatio|DataProfile|DaysFromDate|DaysTillDate|DefineColor|DefineGlobalColor|Delta|DividendPayout|DividendsPerShareTTM|EarningsPerShareTTM|EMA2|EnableApproximation|EntryPrice|ExpAverage|FastKCustom|FinancialLeverage|First|FixedChargeCoverageRatio|FPL|FreeCashFlowPerShare|Fundamental|Gamma|GetActualEarnings|GetAggregationPeriod|GetATMOption|GetAveragePrice|GetColor|GetDay|GetDayOfMonth|GetDayOfWeek|GetDaysToExpiration|GetDividend|GetEstimatedEarnings|GetEventOffset|GetHighest|GetHighestValueArea|GetInterestRate|GetLastDay|GetLastMonth|GetLastWeek|GetLastYear|GetLowest|GetLowestValueArea|GetMarketMakerMove|GetMinValueOffset|GetMonth|GetNetLiq|GetNextExpirationOption|GetNextITMOption|GetNextOTMOption|GetOpenPL|GetPointOfControl|GetPriceType|GetQuantity|GetSplitDenominator|GetSplitNumerator|GetStrike|GetSymbol|GetSymbolPart|GetTime|GetTotalCash|GetUnderlyingSymbol|GetValue|GetWeek|GetYear|GetYield|GetYYYYMMDD|GlobalColor|GrossProfitMargin|HasConferenceCall|HasContractChangeEvent|HasEarnings|Hide|HideBubble|HidePricePlot|HideTitle|Highest|HighestAll|HighestWeighted|InterestRate|InventoryTurnover|IsAscending|IsDescending|IsDoji|IsEuropean|IsLongBlack|IsLongWhite|IsOptionable|IsPut|LongTermDebtToCapital|Lowest|LowestAll|LowestWeighted|Median|MidBodyVal|MoneyFlow|MonkeyBars|MovingAverage|NetProfitMargin|OperatingProfitMargin|OptionPrice|QuickRatio|RegularTradingEnd|RegularTradingStart|ReturnOnAssets|ReturnOnEquity|Rho|SalesPerShare|SecondsFromTime|SecondsTillTime|SetChartType|SetDefaultColor|SetHiding|SetLineWeight|SetPaintingStrategy|SetStyle|Show|TakeValueColor|TaxRate|Theta|TickSize|TickValue|TimeProfile|TotalAssetTurnover|TrueRange|Ulcer|Vega|VolumeProfile|WildersAverage|WMA|AccDist|AccountNetLiq|AccelerationBands|AccelerationDecelerationOsc|AccumDistBuyPr|AccumDistPrVol|AccumulationDistribution|AccumulationSwingIndex|AdaptiveEMA|AdvanceDecline|AdvanceDeclineCumulativeAvg|ADX|ADXBreakoutsFilter|ADXCrossover|ADXR|Alpha2|AlphaJensen|AM_Detector|APTR|AroonIndicator|AroonOscillator|ATR|ATRHighSMABreakoutsFilter|ATRTrailingStop|ATRWilder|AverageTrueRange|AwesomeOscillator|BalanceOfMarketPower|BandpassFilter|BBDivergence|Beta|Beta2|BollingerBandsCrossover|BollingerBands|BollingerBandsEMA|BollingerBandsSMA|BollingerBandwidth|BollingerPercentB|CAM_Indicator|CamarillaPoints|CCI|CCIAverage|ChaikinMoneyFlow|ChaikinOsc|ChaikinOscillator|ChaikinVolatility|ChandeMomentumOscillator|CloseLocationValue|Comparison|CondensedCandles|Correlation|CorrelationCycleAngle|CorrelationCycleIndicator|CorrelationCycleMarketState|CorrelationTrendIndicator|CPMO|CSI|CumulativeOvernightVolume|CumulativeVolumeIndex|CyberCyclesOscillator|CycleTrendAnalytics|DailyHighLow|DailyOpen|DailySMA|DarvasBox|DEMA|DemandIndex|DetrendedPriceOsc|DeviationScaledMovAvg|DeviationScaledOscillator|DIMinus|DIPlus|DisparityIndex|DisplacedEMA|Displacer|DMA|DMH — new|DMI|DMI_Oscillator|DMI_ReversalAlerts|DMI_StochasticExtreme|DoubleSmoothedStochastic|DynamicMomentumIndex|EaseOfMovement|EfficiencyRatio|EhlersAutocorrelation|EhlersAutocorrelationPeriodogram|EhlersDecyclerOscillator|EhlersDistantCoefficientFilter|EhlersHighpassFilter|EhlersRoofingFilter|EhlersSimpleDecycler|EhlersStochastic|EhlersSuperSmootherFilter|ElegantOscillator — new|ElliotOscillator|EMAEnvelope|ErgodicOsc|ESDBands|Ermanometry|ExponentialDeviationBands|FastBeta|FIR_FiltersOfPriceChange|FIR_Hamming|FIR_Hann|FIR_TriangleWeighting|FisherTransform|FloatingPL|FM_Demodulator|FM_Demodulator2|ForceIndex|ForecastOscillator|FourierSeriesIndicator|FourPercentModel|FreedomOfMovement|FW_CCI_Advanced|FW_CCI_Basic|FW_DPO_MOBO|FW_FisherTransformer|FW_MMG|FW_MOBO_Advanced|FW_MOBO_Basic|FW_SOAP|GatorOscillator|HACOLT|HeikinAshiDiff|HHLLS|HiLoActivator|HistoricalVolatility|HLVolatility|HullMovingAvg|Ichimoku|IFT_StochOsc|Impulse|ImpVolatility|Inertia|IntradayFlagFormation|IntradayMomentumIndex|KeltnerChannels|KlingerHistogram|KlingerOscillator|LBR_PaintBars|LBR_SmartADX|LBR_ThreeTenOscillator|LeavittConvolutionAcceleration|LeavittConvolution|LeavittConvolutionSlope|LegacyEMA|LinearRegCh100|LinearRegCh50|LinearRegChVar|LinearRegCurve|LinearRegressionSlope|LinearRegrIndicator|LinearRegrReversal|LinearRegTrendline|LongHaulFilter|LookUpHighest|LookUpLowest|MACD|MACDHistogram|MACDHistogramCrossover|MACDTwoLines|MACDWithPrices|MAD — new|MADH — new|MajorGannLevels|MarkerIndicator|MarketForecast|MarketSentiment|MassIndex|McClellanOscillator|McClellanSummationIndex|MedianAverage|MedianPrice|MESASineWave|MiddleHighLowMA|MktFacilitationIdx|ModifiedTrueRange|Momentum|MomentumCrossover|MomentumPercent|MomentumPercentDiff|MomentumSMA|MoneyFlow|MoneyFlowIndex|MoneyFlowIndexCrossover|MoneyFlowOscillator|MonkeyBars|MonthlySeasonality|MovAvgAdaptive|MovAvgBands|MovAvgBandWidth|MovAvgEnvelope|MovAvgExponential|MovAvgExpRibbon|MovAvgTriangular|MovAvgTwoLines|MovAvgWeighted|MovingAvgCrossover|MultiCurrencyCorrelationOsc|MyRSIWithNET|NegativeVolumeIndex|Next3rdFriday|OnBalanceVolume|OnBalanceVolumeModified|OnsetTrendDetector|OpenInterest|OptionDelta|OptionGamma|OptionRho|OptionTheta|OptionVega|PairCorrelation|PairRatio|ParabolicSAR|ParabolicSARCrossover|PercentChg|PercentR|PersonsPivots|PivotPoints|PMC|PMO|PolarizedFractalEfficiency|PolychromMtm|PositionNetLiq|PositionOpenPL|PositiveVolumeIndex|PPS|PriceActionIndicator|PriceAndVolumeTrend|PriceAverageCrossover|PriceChannel|PriceOsc|PriceRatio|PriceVolumeRank|PriceZoneOscillator|ProbabilityOfExpiringCone|ProjectionBands|ProjectionOscillator|QStick|RainbowAverage|RandomWalkIndex|RangeBands|RangeIndicator|RateOfChange|RateOfChangeCrossover|RateOfChangeWithBands|Ray|RayBearPower|RayBullPower|RecursiveMedianFilter|RecursiveMedianOscillator|Reflex|RegressionDivergence|RelativeMomentumIndex|RelativeRangeIndex|RelativeStrength|RelativeVolatilityIndex|RelativeVolumeStDev|ReverseEMA|ReverseEngineeringMACD|ReverseEngineeringRSI|RibbonStudy|RocketRSI|RSI|RSICrossover|RSIH — new|RSIWilder|RSMK|RSquared|SchaffTrendCycle|SectorRotationModel|SemiCupFormation|SentimentZoneOscillator|SequenceCounter|SeriesCount|SimpleMovingAvg|SimpleTrendChannelFilter|SlowRSI|SlowVSI|SoftAndHardLimiterComparison — new|Spearman|SpectrumBars|Spreads|StandardDevChannel|StandardDeviation|StandardError|StandardErrorBands|StandardErrorChannel|STARCBands|Stiffness|StochasticCrossover|StochasticFast|StochasticFull|StochasticFullDiff|StochasticMACD|StochasticMomentumIndex|StochasticSlow|StochRSI|StressIndicator|SuperPassbandFilter|SVEPivots|SVEStochRSI|SVEZLRBPercB|SwamiAccDist|SwamiConvolution|SwamiIntradayFisher|SwamiIntradayImpulse|SwamiIntradayVolume|SwamiLaguerreTrend|SwamiMarketMode|SwamiPredict|SwamiRelativePerformance|SwamiSwingWave|SwamiVolatility|SwamiVolume|SwingIndex|SymbolRelation|TAC_ADX|TAC_DIMinus|TAC_DIPlus|TechnicalStockRating|TEMA|TheoreticalOptionPrice|TimeSeriesForecast|TMV|TPOProfile|TradeVolumeIndex|Trendflex|TrendNoiseBalance|TrendPeriods|TrendPersistenceRate|TrendQuality|TRIX|TrueRangeIndicator|TrueRangeSpecifiedVolume|TrueStrengthIndex|TTM_LRC|TTM_ScalperAlert|TTM_Squeeze|TTM_Trend|TTM_Wave|TypicalPrice|UlcerIndex|UltimateOscillator|UniversalOscillator|VariableMA|VerticalHorizontalFilter|VolatilityStdDev|VolatilitySwitch|VolumeAccumulation|VolumeAvg|VolumeFlowIndicator|VolumeOsc|VolumeProfile|VolumeRateOfChange|VolumeWeightedMACD|VolumeZoneOscillator|VortexIndicator|VossPredictiveFilter|VPNIndicator|VWAP|WarningSymbols|WeaknessInAStrongTrend|WeeklyAndDailyMACD|WeeklyAndDailyPPO|WeightedClose|WildersSmoothing|WilliamsAD|WilliamsAlligator|WilliamsPercentR|WoodiesCCI|WoodiesPivots|ZigZagHighLow|ZigZagPercent|ZigZagSign|ZigZagTrendPercent|ZigZagTrendSign|_true|_false)\\b"
+				}
+			]
+		},
+
+		"strings": {
+			"name": "string.quoted.double.thinkscript",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.thinkscript",
+					"match": "\\\\."
+				}
+			]
+		},
+
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.number-sign.thinkscript",
+				"begin": "#",
+				"end": "\n"
+			}]
+		},
+
+		"constants": {
+			"patterns": [
+			
+				{
+				"name": "constant.character",
+				"match": "(<|>|=|!|\\+|-|\/|\\*|%|&|;)"
+				},
+				{
+				"name": "constant.language",
+				"match": "\\b(?i)(ask|bid|last|mark|close|high|hl2|hlc3|imp_volatility|low|ohlc4|open|open_interest|tick_count|volume|vwap)\\b"
+				},
+				{
+				"name": "constant.numeric",
+				"match": "\\b[0-9]+\\.?[0-9]*\\b"
+				}
+			]
+		},
+
+		"variables":{
+			"patterns": [
+				{
+				"name": "variable.language.thinkscript",
+				"match": "\\b(?i)(any|boolean|customcolor|double|idataholder|int|symbol|NaN|E|AbsValue|ACos|ASin|ATan|Ceil|Cos|Crosses|Exp|Floor|IsInfinite|Lg|Log|Max|Min|Power|Random|Round|RoundDown|RoundUp|Sign|Sin|Sqr|Sqrt|Sum|Tan|TotalSum|Correlation|Covariance|Inertia|InertiaAll|LinDev|StDev|StDevAll|StErr|StErrAll|NEGATIVE_INFINITY|Pi|POSITIVE_INFINITY|NumberFormat|DOLLAR|THREE_DECIMAL_PLACES|TWO_DECIMAL_PLACES|AggregationPeriod|Alert|AverageType|ChartType|Color|CrossingDirection|Curve|EarningTime|Events|FiscalPeriod|FundamentalType|MonkeyVolumeShowStyle|NumberFormat|OptionClass|OrderType|PaintingStrategy|PricePerRow|PriceType|ProfitLossMode|Sound|SetDefaultColor|hide_on_daily|hide_on_intraday|lower|upper|on_volume|once_per_bar|real_size|weak_volume_dependency|zerobase|MIN|TWO_MIN|THREE_MIN|FOUR_MIN|FIVE_MIN|TEN_MIN|FIFTEEN_MIN|TWENTY_MIN|THIRTY_MIN|HOUR|TWO_HOURS|FOUR_HOURS|DAY|TWO_DAYS|THREE_DAYS|FOUR_DAYS|WEEK|MONTH|OPT_EXP|QUARTER|YEAR|BAR|ONCE|TICK|EXPONENTIAL|HULL|SIMPLE|WEIGHTED|WILDERS|BAR|CANDLE|CANDLE_TREND|HEIKIN_ASHI|EQUIVOLUME|LINE|AREA|BLACK|BLUE|CURRENT|CYAN|DARK_GRAY|DARK_GREEN|DARK_ORANGE|DARK_RED|DOWNTICK|GRAY|GREEN|LIGHT_GRAY|LIGHT_GREEN|LIGHT_ORANGE|LIGHT_RED|LIME|MAGENTA|ORANGE|PINK|PLUM|RED|UPTICK|VIOLET|WHITE|YELLOW|ABOVE|BELOW|ANY|FIRM|LONG_DASH|MEDIUM_DASH|SHORT_DASH|POINTS|ANY|BEFORE_MARKET|AFTER_MARKET|CONFERENCE_CALL|DIVIDEND|EARNINGS|SPLIT|QUARTER|YEAR|ALL|LAST|NONE|DOLLAR|THREE_DECIMAL_PLACES|TWO_DECIMAL_PLACES|CALL|PUT|BUY_AUTO|BUY_TO_CLOSE|BUY_TO_OPEN|SELL_AUTO|SELL_TO_CLOSE|SELL_TO_OPEN|ARROW_DOWN|ARROW_UP|BOOLEAN_ARROW_DOWN|BOOLEAN_ARROW_UP|BOOLEAN_POINTS|BOOLEAN_WEDGE_DOWN|BOOLEAN_WEDGE_UP|DASHES|HISTOGRAM|HORIZONTAL|LINE|LINE_VS_POINTS|LINE_VS_SQUARES|LINE_VS_TRIANGLES|POINTS|SQUARED_HISTOGRAM|SQUARES|TRIANGLES|VALUES_ABOVE|VALUES_BELOW|AUTOMATIC|TICKSIZE|COST_BASIS|EXECUTION_PRICE|NoSound|Bell|Ding|Ring|Chimes)\\b"
+				}
+			]
+		}
+
+	},
+	"scopeName": "source.thinkscript"
+}
