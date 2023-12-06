@@ -15,6 +15,8 @@ Supported file extension: &nbsp; <b><i>.thinkscript</i></b>
 ### A side-by-side screenshot
 <img src="https://ridertradingtools.com/images/side-by-side_example.png" alt="side-by-side editor example">
 
+<br>
+
 ---
 
 ### How do I use it?
@@ -24,6 +26,8 @@ Install the VS Code extension and the changes will automatically be applied to .
 - VS Code extension marketplace:  https://marketplace.visualstudio.com/items?itemName=RiderTradingTools.thinkscript
 
 - github: https://github.com/RiderTradingTools/thinkscript
+
+<br>
 
 ---
 
@@ -44,10 +48,14 @@ Link to corresponding thinkscript color theme:
 
 - If you want to report an error or want to suggest anything just send us an [e-mail](mailto:tools@ridertradingtools.com)
 
+<br>
+
 ---
 
 ### Version 
 - *1.0.1*
+
+<br>
 
 ---
 
