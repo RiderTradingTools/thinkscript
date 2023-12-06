@@ -4,7 +4,7 @@
   "description": "thinkscript syntax highlighting used in thinkorswim trading platform",
   "publisher": "RiderTradingTools",
   "icon": "images/thinkorswim.png",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.80.0"
   },
