@@ -5,7 +5,7 @@
 
 Adds syntax highlight support for thinkscript in Visual Studio Code. 
 
-Supported file extension: &nbsp; <b><i>.thinkscript</i></b>
+Supported file extensions: &nbsp; <b><i>.thinkscript</i></b> &nbsp; <b><i>.tosts</i></b> &nbsp; <b><i>.ts</i></b>
 
 <br>
 
@@ -56,8 +56,10 @@ Link to corresponding thinkscript color theme:
 
 ---
 
-### Version 
-- *1.0.1*
+### Release Notes
+
+ - Version *1.0.1* &nbsp; - Intial release.  
+ - Version *1.0.2* &nbsp; - Added <b>@Date</b> Annotation keyword. Included file extensions: &nbsp; .tosts  &nbsp; .ts 
 
 <br>
 

@@ -4,11 +4,12 @@
   "description": "thinkscript syntax highlighting used in thinkorswim trading platform",
   "publisher": "RiderTradingTools",
   "icon": "images/thinkorswim.png",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.80.0"
   },
   "pricing": "Free",  
+  "license": "See license in LICENSE.txt",
   "categories": [
     "Programming Languages"
   ],
@@ -20,9 +21,13 @@
   "contributes": {
     "languages": [{
       "id": "thinkscript",
-      "aliases": ["thinkscript", "thinkscript"],
-      "extensions": [".thinkscript"],
-      "configuration": "./language-configuration.json"
+      "aliases": ["thinkscript", "thinkScript"],
+      "extensions": [ ".thinkscript", ".tosts", ".ts" ],
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "./images/thinkorswim.png",
+        "dark": "./images/thinkorswim.png"
+     }            
     }],
     "grammars": [{
       "language": "thinkscript",

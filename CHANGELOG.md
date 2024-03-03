@@ -2,8 +2,12 @@
 
 All notable changes to the "thinkscript" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [Unreleased]
+## 1.0.1
 
-- Initial release
+- Initial release with syntax, themes, and simple auto complete.
+
+
+## 1.0.2
+
+- Added <b>@Date</b> Annotation keyword. Included file extensions: &nbsp; .tosts  &nbsp; .ts 
